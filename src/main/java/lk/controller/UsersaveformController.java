@@ -40,7 +40,7 @@ public class UsersaveformController {
 
 
             // Navigate to main/dashboard screen (not login form again)
-            Parent root = FXMLLoader.load(getClass().getResource("/views/dashboard.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("/views/LoginForm.fxml"));
             Stage stage = (Stage) rootNode.getScene().getWindow();
             Scene scene = new Scene(root);
             stage.setTitle("Web News - Dashboard");
