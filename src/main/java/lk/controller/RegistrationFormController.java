@@ -23,7 +23,6 @@ public class RegistrationFormController {
     public TextField email;
     public PasswordField password;
 
-    // Database connection details
     private static final String DB_URL = "jdbc:mysql://localhost:3306/practical_test";
     private static final String DB_USER = "root";
     private static final String DB_PASSWORD = "shalom@12344321";
@@ -62,7 +61,7 @@ public class RegistrationFormController {
             pstmt.setString(1, firstName);
             pstmt.setString(2, lastName);
             pstmt.setString(3, emailAddr);
-            pstmt.setString(4, pwd); // Consider hashing the password in production
+            pstmt.setString(4, pwd);
 
             int rowsAffected = pstmt.executeUpdate();
             return rowsAffected > 0;

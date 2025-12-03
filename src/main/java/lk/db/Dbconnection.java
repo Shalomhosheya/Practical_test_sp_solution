@@ -14,7 +14,7 @@ public class Dbconnection {
     public static Dbconnection getDbconnection() throws SQLException {
         return(dbconnection==null)?new Dbconnection():dbconnection;
     }
-    public Connection getConnection(){
+    public  Connection getConnection(){
         return connection;
     }
 }
