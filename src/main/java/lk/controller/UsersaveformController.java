@@ -22,6 +22,13 @@ public class UsersaveformController {
 
     }
 
-    public void loginBtn(ActionEvent actionEvent) {
+    public void loginBtn(ActionEvent actionEvent) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("/views/loginform.fxml"));
+        Stage stage = (Stage) rootNode.getScene().getWindow();
+        Scene scene = new Scene(root);
+        stage.setTitle("Web News - Login");
+        stage.centerOnScreen();
+        stage.setScene(scene);
+        stage.show();
     }
 }
