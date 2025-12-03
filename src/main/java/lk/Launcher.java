@@ -1,4 +1,4 @@
-package practical_news;
+package lk;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -14,9 +14,10 @@ public class Launcher extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("/views/LoginForm.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/views/usersaveform.fxml"));
         Scene scene = new Scene(root);
         stage.setTitle("Web News");
+        stage.setMaximized(true);
         stage.setScene(scene);
         stage.show();
     }

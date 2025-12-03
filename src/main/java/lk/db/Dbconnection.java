@@ -1,4 +1,4 @@
-package lk.Ijse.Dbconnection;
+package lk.db;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

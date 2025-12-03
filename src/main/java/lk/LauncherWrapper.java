@@ -1,4 +1,4 @@
-package practical_news;
+package lk;
 
 public class LauncherWrapper {
     public static void main(String[] args) {
